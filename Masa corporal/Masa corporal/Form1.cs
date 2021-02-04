@@ -26,7 +26,7 @@ namespace Masa_corporal
 
         private void cmdResultado_Click(object sender, EventArgs e)
         {
-            lblRes.Text = (op.Calcular(float.Parse(txtv1.Text), float.Parse(txtv2.Text)).ToString());
+            lblRes.Text = (op.Calcular(float.Parse(txta.Text), float.Parse(txtb.Text)).ToString());
         }
 
         private void cmdNormal_MouseClick(object sender, MouseEventArgs e)
@@ -52,6 +52,16 @@ namespace Masa_corporal
         private void lblRes_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdVer_Click(object sender, EventArgs e)
+        {
+            pbimg1.Visible = true; 
+        }
+
+        private void cmdQuitar_Click(object sender, EventArgs e)
+        {
+            pbimg1.Visible = false;
         }
     }
 }

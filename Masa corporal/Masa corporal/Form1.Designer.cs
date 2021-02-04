@@ -31,57 +31,58 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
-            this.txtv1 = new System.Windows.Forms.TextBox();
-            this.txtv2 = new System.Windows.Forms.TextBox();
+            this.txta = new System.Windows.Forms.TextBox();
+            this.txtb = new System.Windows.Forms.TextBox();
             this.cmdResultado = new System.Windows.Forms.Button();
             this.lblRes = new System.Windows.Forms.Label();
             this.cmdSalir = new System.Windows.Forms.Button();
             this.pbimg1 = new System.Windows.Forms.PictureBox();
-            this.pbimg2 = new System.Windows.Forms.PictureBox();
-            this.pbimg3 = new System.Windows.Forms.PictureBox();
             this.cmdNormal = new System.Windows.Forms.Button();
             this.cmdSobre = new System.Windows.Forms.Button();
             this.cmdObe = new System.Windows.Forms.Button();
+            this.cmdVer = new System.Windows.Forms.Button();
+            this.cmdQuitar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbimg1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbimg2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbimg3)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(78, 62);
+            this.lbl1.Font = new System.Drawing.Font("Lithos Pro Regular", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(66, 44);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(31, 13);
+            this.lbl1.Size = new System.Drawing.Size(49, 19);
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Peso";
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(78, 104);
+            this.lbl2.Font = new System.Drawing.Font("Lithos Pro Regular", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(57, 86);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(34, 13);
+            this.lbl2.Size = new System.Drawing.Size(74, 19);
             this.lbl2.TabIndex = 1;
             this.lbl2.Text = "Altura";
             // 
-            // txtv1
+            // txta
             // 
-            this.txtv1.Location = new System.Drawing.Point(160, 62);
-            this.txtv1.Name = "txtv1";
-            this.txtv1.Size = new System.Drawing.Size(122, 20);
-            this.txtv1.TabIndex = 2;
+            this.txta.Location = new System.Drawing.Point(148, 44);
+            this.txta.Name = "txta";
+            this.txta.Size = new System.Drawing.Size(122, 20);
+            this.txta.TabIndex = 2;
             // 
-            // txtv2
+            // txtb
             // 
-            this.txtv2.Location = new System.Drawing.Point(160, 104);
-            this.txtv2.Name = "txtv2";
-            this.txtv2.Size = new System.Drawing.Size(122, 20);
-            this.txtv2.TabIndex = 3;
+            this.txtb.Location = new System.Drawing.Point(148, 86);
+            this.txtb.Name = "txtb";
+            this.txtb.Size = new System.Drawing.Size(122, 20);
+            this.txtb.TabIndex = 3;
             // 
             // cmdResultado
             // 
-            this.cmdResultado.Location = new System.Drawing.Point(160, 154);
+            this.cmdResultado.Font = new System.Drawing.Font("Lucida Handwriting", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdResultado.Location = new System.Drawing.Point(148, 136);
             this.cmdResultado.Name = "cmdResultado";
             this.cmdResultado.Size = new System.Drawing.Size(122, 46);
             this.cmdResultado.TabIndex = 4;
@@ -95,7 +96,7 @@
             this.lblRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblRes.Font = new System.Drawing.Font("Lithos Pro Regular", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblRes.Location = new System.Drawing.Point(278, 227);
+            this.lblRes.Location = new System.Drawing.Point(109, 196);
             this.lblRes.Name = "lblRes";
             this.lblRes.Size = new System.Drawing.Size(37, 35);
             this.lblRes.TabIndex = 5;
@@ -106,7 +107,7 @@
             // cmdSalir
             // 
             this.cmdSalir.Font = new System.Drawing.Font("Lithos Pro Regular", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdSalir.Location = new System.Drawing.Point(36, 320);
+            this.cmdSalir.Location = new System.Drawing.Point(80, 322);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(127, 42);
             this.cmdSalir.TabIndex = 6;
@@ -117,36 +118,17 @@
             // pbimg1
             // 
             this.pbimg1.Image = ((System.Drawing.Image)(resources.GetObject("pbimg1.Image")));
-            this.pbimg1.Location = new System.Drawing.Point(568, 25);
+            this.pbimg1.Location = new System.Drawing.Point(414, 86);
             this.pbimg1.Name = "pbimg1";
-            this.pbimg1.Size = new System.Drawing.Size(151, 138);
+            this.pbimg1.Size = new System.Drawing.Size(299, 114);
             this.pbimg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbimg1.TabIndex = 7;
+            this.pbimg1.TabIndex = 8;
             this.pbimg1.TabStop = false;
-            // 
-            // pbimg2
-            // 
-            this.pbimg2.Image = ((System.Drawing.Image)(resources.GetObject("pbimg2.Image")));
-            this.pbimg2.Location = new System.Drawing.Point(568, 169);
-            this.pbimg2.Name = "pbimg2";
-            this.pbimg2.Size = new System.Drawing.Size(163, 93);
-            this.pbimg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbimg2.TabIndex = 8;
-            this.pbimg2.TabStop = false;
-            // 
-            // pbimg3
-            // 
-            this.pbimg3.Image = ((System.Drawing.Image)(resources.GetObject("pbimg3.Image")));
-            this.pbimg3.Location = new System.Drawing.Point(568, 268);
-            this.pbimg3.Name = "pbimg3";
-            this.pbimg3.Size = new System.Drawing.Size(163, 94);
-            this.pbimg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbimg3.TabIndex = 9;
-            this.pbimg3.TabStop = false;
+            this.pbimg1.Visible = false;
             // 
             // cmdNormal
             // 
-            this.cmdNormal.Location = new System.Drawing.Point(429, 62);
+            this.cmdNormal.Location = new System.Drawing.Point(372, 241);
             this.cmdNormal.Name = "cmdNormal";
             this.cmdNormal.Size = new System.Drawing.Size(103, 50);
             this.cmdNormal.TabIndex = 10;
@@ -156,7 +138,7 @@
             // 
             // cmdSobre
             // 
-            this.cmdSobre.Location = new System.Drawing.Point(424, 181);
+            this.cmdSobre.Location = new System.Drawing.Point(500, 313);
             this.cmdSobre.Name = "cmdSobre";
             this.cmdSobre.Size = new System.Drawing.Size(108, 51);
             this.cmdSobre.TabIndex = 11;
@@ -166,13 +148,33 @@
             // 
             // cmdObe
             // 
-            this.cmdObe.Location = new System.Drawing.Point(424, 299);
+            this.cmdObe.Location = new System.Drawing.Point(627, 244);
             this.cmdObe.Name = "cmdObe";
-            this.cmdObe.Size = new System.Drawing.Size(117, 47);
+            this.cmdObe.Size = new System.Drawing.Size(113, 47);
             this.cmdObe.TabIndex = 12;
             this.cmdObe.Text = "\"30.0 - 39.9\"";
             this.cmdObe.UseVisualStyleBackColor = true;
             this.cmdObe.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cmdObe_MouseClick);
+            // 
+            // cmdVer
+            // 
+            this.cmdVer.Location = new System.Drawing.Point(428, 28);
+            this.cmdVer.Name = "cmdVer";
+            this.cmdVer.Size = new System.Drawing.Size(108, 36);
+            this.cmdVer.TabIndex = 13;
+            this.cmdVer.Text = "Ver Imagen";
+            this.cmdVer.UseVisualStyleBackColor = true;
+            this.cmdVer.Click += new System.EventHandler(this.cmdVer_Click);
+            // 
+            // cmdQuitar
+            // 
+            this.cmdQuitar.Location = new System.Drawing.Point(585, 28);
+            this.cmdQuitar.Name = "cmdQuitar";
+            this.cmdQuitar.Size = new System.Drawing.Size(102, 36);
+            this.cmdQuitar.TabIndex = 14;
+            this.cmdQuitar.Text = "Quitar imagen";
+            this.cmdQuitar.UseVisualStyleBackColor = true;
+            this.cmdQuitar.Click += new System.EventHandler(this.cmdQuitar_Click);
             // 
             // Form1
             // 
@@ -180,24 +182,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmdQuitar);
+            this.Controls.Add(this.cmdVer);
             this.Controls.Add(this.cmdObe);
             this.Controls.Add(this.cmdSobre);
             this.Controls.Add(this.cmdNormal);
-            this.Controls.Add(this.pbimg3);
-            this.Controls.Add(this.pbimg2);
             this.Controls.Add(this.pbimg1);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.lblRes);
             this.Controls.Add(this.cmdResultado);
-            this.Controls.Add(this.txtv2);
-            this.Controls.Add(this.txtv1);
+            this.Controls.Add(this.txtb);
+            this.Controls.Add(this.txta);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbimg1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbimg2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbimg3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,17 +207,17 @@
 
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.TextBox txtv1;
-        private System.Windows.Forms.TextBox txtv2;
+        private System.Windows.Forms.TextBox txta;
+        private System.Windows.Forms.TextBox txtb;
         private System.Windows.Forms.Button cmdResultado;
         private System.Windows.Forms.Label lblRes;
         private System.Windows.Forms.Button cmdSalir;
         private System.Windows.Forms.PictureBox pbimg1;
-        private System.Windows.Forms.PictureBox pbimg2;
-        private System.Windows.Forms.PictureBox pbimg3;
         private System.Windows.Forms.Button cmdNormal;
         private System.Windows.Forms.Button cmdSobre;
         private System.Windows.Forms.Button cmdObe;
+        private System.Windows.Forms.Button cmdVer;
+        private System.Windows.Forms.Button cmdQuitar;
     }
 }
 
